@@ -1,0 +1,328 @@
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgb(29, 29, 29);
+}
+
+::-webkit-scrollbar-thumb {
+    width: 15px;
+    background-color: rgb(146, 0, 231);
+    border-radius: 10px;
+}
+
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font: bold;
+}
+
+body {
+    background-color: rgb(20, 19, 19);
+    display: flex;
+    padding: 0px;
+}
+
+header {
+    position: fixed;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, rgb(130, 6, 202), orange);
+    border-image-slice: 1;  
+    background-color: black;
+    display: flex;
+    top: 0px;
+    left: 0px;
+    height: 75px;
+    width: 100%;
+    padding: 0px;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+}
+
+.header-like {
+    background: url("img/like_after_img.png") no-repeat;
+    width: 35px;
+    height: 35px;
+    border: transparent;
+    cursor: pointer;
+}
+
+.header-like:hover {
+    background: url("img/like_before_img.png") no-repeat;
+}
+
+.header-button1, .header-button2, .header-button3, .header-button4, .header-button5 {
+    font: bold;
+    font-size: large;
+    color: white;
+    margin-right: 60px;
+}   
+
+.portfolio-color {
+    position: fixed;
+    margin-top: 80px;
+    width: 45px;
+    height: 80px;
+    background-color: rgb(130, 6, 202);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    z-index: 1;
+}   
+
+.btn-theme-dark {
+    height: 25px;
+    width: 25px;
+    background-color: black;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.btn-theme-light {
+    height: 25px;
+    width: 25px;
+    background-color: ghostwhite;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+}
+
+.home-info {
+    height: 300px;
+    width: 700px;
+    margin-top: 225px;
+    margin-left: 60px;
+}
+
+.home-welcome {
+    width: 300px;
+    margin: auto;
+    margin-left: 60px;
+}
+
+.home-name {
+    margin: 10px 60px;
+    width: 500px;
+}
+
+.nome {
+    color: orange;
+}
+
+button:hover {
+    box-shadow: 0 0 10px rgb(146, 0, 231);
+}
+
+button {
+    font-weight: bold;
+    border-radius: 30px;
+    margin-top: 50px;
+    height: 50px;
+    width: 150px;
+    background-color: transparent;
+    font: bold;
+    font-size: medium;
+    border-color: rgb(146, 0, 231);
+    border-style: double;
+    cursor: pointer;
+}
+
+.home-button {
+    margin-left: 60px;
+}
+
+.home-img {
+    width: 298px;
+    margin-top: 175px;
+    margin-left: 100px;
+    height: 350px;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, rgb(146, 0, 231), orange);
+    border-image-slice: 1;
+}
+
+.button_scroll1 {
+    margin-top: 50px;
+    width: 20px; 
+    animation: jumping 1s linear infinite;
+    cursor: pointer;
+}
+
+.button_scroll:hover {
+    box-shadow: none;
+}
+
+.about {
+    margin: 10px;
+    margin-left: -10px;
+    width: calc(100% + 10px);
+    background-color: rgb(29, 29, 29);
+    height: 540px;
+    display: flex;
+    align-items: center;
+}
+
+.about-info {
+    margin: 55px 58px;
+    width: 655px; 
+}
+
+@keyframes jumping {
+    from {transform: translateY(-12px);}
+    50% {transform: translateY(0);}
+    to {transform: translateY(-12px);}
+}
+
+.about-img:hover {
+    -webkit-transform: scale(1.05);
+}
+
+.about-text {
+    margin-right: 60px;
+    font-size: 17px;
+    font-style: bold;
+}
+
+.about-button-linkedin {
+    margin-left: 30px;
+}
+
+.experiences {
+    margin-top: 50px;
+    text-align: center;
+}  
+
+.experience-info {
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.radio-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.option{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 150px;
+    margin-left: 120px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 2px solid rgb(34, 34, 34);
+    transition: all 0.3s ease;
+    background-color: transparent;
+    font-size: 17px;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+#option-1:checked:checked ~ .option-1,
+#option-2:checked:checked ~ .option-2,
+#option-3:checked:checked ~ .option-3{
+    background: rgb(146, 0, 231);
+    border: 2px solid transparent;
+    box-shadow: 0 0 10px rgb(146, 0, 231);
+}
+
+.experience-text{
+    border: 2px solid rgb(130, 6, 202);
+    border-radius: 30px;  
+    box-shadow: 0 0 10px rgb(146, 0, 231);
+    margin-left: 150px;
+    width: 680px;
+    padding: 35px;
+    text-align: left;
+    font-size: 17px;
+    max-height: 160px;
+}
+
+.button_scroll2 {
+    margin-top: 95px;
+    width: 20px;
+    animation: jumping 1s linear infinite;
+    cursor: pointer;
+}
+
+.projects{
+    background-color: rgb(29, 29, 29);
+    margin-top: 20px;
+    text-align: center;
+    padding: 25px;
+    height: 750px;
+    margin-left: -10px;
+}
+
+.projects1, .projects2 {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.project1, .project2 {
+    width: 300px;
+    height: 310px;
+    background-image: radial-gradient(rgb(37, 37, 37), black);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 17px;
+    font-style: bold;
+    cursor: pointer;
+}
+
+.project1:hover, .project2:hover {
+    -webkit-transform: scale(1.05);
+}
+
+.contacts {
+    height: 150px;
+    margin-left: -10px;
+}
+
+.contact-buttons { 
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-email, .contact-linkedin, .contact-git, .contact-cv {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    justify-content: center;
+    gap: 5px;
+}
+
+footer {
+    height: 75px;
+    margin-left: -10px;
+    margin-top: 50px;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    border-top: 2px solid;
+    border-image: linear-gradient(to left, rgb(130, 6, 202), orange);
+    border-image-slice: 1;
+    margin-bottom: -10px;
+}
+
+.footer-text {
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
